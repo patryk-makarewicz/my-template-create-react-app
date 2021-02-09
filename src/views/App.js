@@ -10,6 +10,7 @@ import css from '../assets/logo-css3.png';
 import sass from '../assets/logo-sass.svg';
 import eslint from '../assets/logo-eslint.svg';
 import prettier from '../assets/logo-prettier.png';
+import netlify from '../assets/logo-netlify.svg';
 import './App.scss';
 
 const App = () => (
@@ -27,6 +28,7 @@ const App = () => (
           <img src={sass} className="icon__sass" alt="logo Sass" title="Sass" />
           <img src={eslint} className="icon__eslint" alt="logo ESlint" title="ESlint" />
           <img src={prettier} className="icon__prettier" alt="logo Prettier" title="Prettier" />
+          <img src={netlify} className="icon__netlify" alt="logo Netlify" title="Netlify" />
         </div>
       </header>
     </div>
