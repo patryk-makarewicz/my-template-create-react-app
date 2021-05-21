@@ -16,7 +16,7 @@ import './App.scss';
 const App = () => (
   <>
     <GlobalStyle />
-    <div classNme="app">
+    <div className="app">
       <header className="app__header">
         <p className="app__paragraph">My template for React-App.</p>
         <img src={logo} className="app__logo" alt="logo" />
