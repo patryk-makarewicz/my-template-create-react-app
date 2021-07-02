@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import App from './views/App';
+import styled from 'styled-components';
+import App from './pages/App';
+import './i18n';
 import reportWebVitals from './reportWebVitals';
 
+const Loading = styled.div`
+  position: absolute;
+  width: 100vw;
+  top: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  color: rgb(155, 157, 159);
+  font-size: 36px;
+  text-align: center;
+`;
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Suspense fallback={<Loading>Loading...</Loading>}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Suspense>,
   document.getElementById('root'),
 );
 
